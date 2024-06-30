@@ -18,7 +18,7 @@
    ```javascript
     php artisan migrate
    ```
-2. First register new user `/register` then Link the `storage/app/public/uploads` at the root `public/uploads` and run this command for managing the file management
+2. Delete the `uploads` folder from at the root `public/uploads` and run this command for managing the file management
 ```javascript
 php artisan storage:link
 ```
