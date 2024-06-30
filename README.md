@@ -4,9 +4,17 @@
 **"php": "^8.1"**
 ### Frontend Purpose -Follow this way
 1. After cloning the starter template , you need to run those commands for setup the authentication for laravel app when you will use it for frontend purposes.
-   1. goto `.env` file at the root of your project and write your own database name
-   2. goto `create_users` migration file to add anyother columns whatever your need.
-   3. Then run these commands
+   1. Clone repository first
+      ```javascript
+      https://github.com/smmunna/laravel-starter-template.git
+      ```
+      Remove the authorization of this repository
+      ```javascript
+         git remote rm origin
+      ```
+   2. goto `.env` file at the root of your project and write your own database name
+   3. goto `create_users` migration file to add anyother columns whatever your need.
+   4. Then run these commands
    ```javascript
     php artisan migrate
    ```
