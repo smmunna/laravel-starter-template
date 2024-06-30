@@ -1,7 +1,6 @@
 @extends('layouts.dashboard_layout')
 @section('title', 'User Dashboard')
 @section('content')
-    <!--Change according to your own -->
     <div class="d-flex justify-content-center">
         <div>
             <h3>User dashboard</h3>

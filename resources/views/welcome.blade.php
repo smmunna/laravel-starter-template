@@ -32,9 +32,6 @@
         <div>
             Developed by 2024&copy; <a href="http://www.github.com/smmunna" target="_blank">Sm Munna</a>
         </div>
-    </div>
-
-      
+    </div>     
 </body>
-
 </html>
