@@ -26,12 +26,13 @@
 </head>
 
 <body class="antialiased">
-    <h3>Welcome to Starter Server</h3>
+    <h3>Welcome to Laravel Starter Template</h3>
     <hr>
     <div class="footer">
         <div>
             Developed by 2024&copy; <a href="http://www.github.com/smmunna" target="_blank">Sm Munna</a>
         </div>
-    </div>     
+    </div>
 </body>
+
 </html>
