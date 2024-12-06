@@ -8,6 +8,12 @@
       ```javascript
       https://github.com/smmunna/laravel-starter-template.git
       ```
+	```javascript
+      cd laravel-starter-template
+      ```
+      ```javascript
+      composer install
+      ```
       Remove the authorization of this repository
       ```javascript
          git remote rm origin
