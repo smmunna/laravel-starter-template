@@ -76,35 +76,38 @@ class AuthController extends Controller
 
     //user login
     public function login(Request $request)
-    {
-        // Validate the request data
-        $request->validate([
-            'email' => 'required|email',
-            'password' => 'required',
-        ]);
+{
+    // Validate the request data
+    $request->validate([
+        'email' => 'required|email',
+        'password' => 'required',
+    ]);
 
-        // Attempt to authenticate the user
-        if (Auth::attempt(['email' => $request->email, 'password' => $request->password])) {
-            // Authentication successful
-            $user = Auth::user();
-            switch ($user->role) {
-                case 'user':
-                    // Redirect to the admin dashboard
-                    return redirect()->route('user.dashboard');
-                    break;
-                case 'admin':
-                    // Redirect to the teacher dashboard
-                    return redirect()->route('admin.dashboard');
-                    break;
-                default:
-                    // Redirect to the default dashboard or the intended URL
-                    return redirect()->intended('/');
-                    break;
-            }
+    // Attempt to authenticate the user
+    if (Auth::attempt(['email' => $request->email, 'password' => $request->password])) {
+        // Authentication successful
+        $user = Auth::user();
+        $dashboardRoute = '';
+
+        switch ($user->role) {
+            case 'user':
+                $dashboardRoute = route('user.dashboard');
+                break;
+            case 'admin':
+                $dashboardRoute = route('admin.dashboard');
+                break;
+            default:
+                $dashboardRoute = route('/'); // Replace with your default dashboard route
+                break;
         }
-        // Authentication failed
-        return redirect()->back()->with('loginError', 'Invalid username or password');
+
+        return response()->json(['success' => true, 'redirect' => $dashboardRoute]);
     }
+
+    // Authentication failed
+    return response()->json(['success' => false, 'message' => 'Invalid username or password']);
+}
+
 
     // profile page
     public function profile()
