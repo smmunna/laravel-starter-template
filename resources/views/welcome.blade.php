@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Server | Sm Munna</title>
+    <title>Starter Pack | Sm Munna</title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
@@ -30,7 +30,7 @@
     <hr>
     <div class="footer">
         <div>
-            Developed by 2024&copy; <a href="http://www.github.com/smmunna" target="_blank">Sm Munna</a>
+            Developed by 2025&copy; <a href="http://www.github.com/smmunna" target="_blank">Sm Munna</a>
         </div>
     </div>
 </body>
